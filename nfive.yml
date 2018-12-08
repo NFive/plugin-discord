@@ -1,0 +1,15 @@
+name: NFive/plugin-discord
+version: 1.0.0
+description: Plugin to set client's Discord rich presence
+author: NFive
+license: LGPL
+server:
+  main:
+    - NFive.Discord.Server
+  include:
+    - NFive.Discord.Shared
+client:
+  main:
+    - NFive.Discord.Client
+  include:
+    - NFive.Discord.Shared

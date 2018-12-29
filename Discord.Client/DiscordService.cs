@@ -1,6 +1,7 @@
 using CitizenFX.Core.Native;
 using JetBrains.Annotations;
 using NFive.Discord.Shared;
+using NFive.SDK.Client.Commands;
 using NFive.SDK.Client.Events;
 using NFive.SDK.Client.Interface;
 using NFive.SDK.Client.Rpc;
@@ -15,7 +16,7 @@ namespace NFive.Discord.Client
 	[PublicAPI]
 	public class DiscordService : Service
 	{
-		public DiscordService(ILogger logger, ITickManager ticks, IEventManager events, IRpcHandler rpc, OverlayManager overlay, User user) : base(logger, ticks, events, rpc, overlay, user) { }
+		public DiscordService(ILogger logger, ITickManager ticks, IEventManager events, IRpcHandler rpc, ICommandManager commands, OverlayManager overlay, User user) : base(logger, ticks, events, rpc, commands, overlay, user) { }
 
 		public override async Task Started()
 		{
@@ -34,7 +35,7 @@ namespace NFive.Discord.Client
 				API.SetDiscordRichPresenceAssetSmall(config.LogoSmall);
 				API.SetDiscordRichPresenceAssetSmallText(config.TextSmall);
 
-				await this.Delay(TimeSpan.FromMinutes(1));
+				await Delay(TimeSpan.FromMinutes(1));
 			});
 		}
 	}

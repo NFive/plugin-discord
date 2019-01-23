@@ -1,7 +1,7 @@
-﻿namespace NFive.Discord.Shared
+namespace NFive.Discord.Shared
 {
-	public static class DiscordEvents
+	public class DiscordEvents
 	{
-		public static readonly string GetConfig = "nfive:discord:config";
+		public const string Configuration = "nfive:discord:configuration";
 	}
 }

@@ -37,10 +37,10 @@ namespace NFive.Discord.Client
 
 				API.SetDiscordAppId(this.config.AppId);
 				API.SetRichPresence(this.config.Description);
-				API.SetDiscordRichPresenceAsset(this.config.Logo);
-				API.SetDiscordRichPresenceAssetText(this.config.Text);
-				API.SetDiscordRichPresenceAssetSmall(this.config.LogoSmall);
-				API.SetDiscordRichPresenceAssetSmallText(this.config.TextSmall);
+				API.SetDiscordRichPresenceAsset(this.config.Large.Logo);
+				API.SetDiscordRichPresenceAssetText(this.config.Large.Text);
+				API.SetDiscordRichPresenceAssetSmall(this.config.Small.Logo);
+				API.SetDiscordRichPresenceAssetSmallText(this.config.Small.Text);
 
 				await Delay(TimeSpan.FromMinutes(1));
 			});

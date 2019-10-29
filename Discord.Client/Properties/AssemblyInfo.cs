@@ -5,11 +5,11 @@ using NFive.SDK.Client;
 [assembly: ClientPlugin(SDK.Version)]
 
 [assembly: AssemblyTitle("NFive Discord")]
-[assembly: AssemblyDescription("Plugin to set client's Discord rich presence")]
+[assembly: AssemblyDescription("Sets client's Discord rich presence")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("NFive")]
 [assembly: AssemblyProduct("NFive Discord Client Plugin")]
-[assembly: AssemblyCopyright("Copyright © NFive 2018")]
+[assembly: AssemblyCopyright("Copyright © NFive 2018-2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]

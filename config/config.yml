@@ -1,0 +1,19 @@
+# Your Discord application "Client ID" from https://discordapp.com/developers/applications/
+app_id: 520598603568250881
+
+# Text to show under the server name
+description: My server description
+
+images:
+  # Large image details
+  large:
+    # "Rich Presence Asset" name from your Discord application
+    asset: logo
+
+    # Text to show on hover
+    text: My Server
+
+  # Small image details
+  small:
+    asset: nfive
+    text: Server powered by NFive

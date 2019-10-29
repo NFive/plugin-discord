@@ -8,21 +8,30 @@ namespace NFive.Discord.Shared
 
 		public string Description { get; set; } = "My server description";
 
-		public IconConfiguration Large { get; set; } = new IconConfiguration
+		public ImageConfiguration Images { get; set; } = new ImageConfiguration
 		{
-			Logo = "logo",
-			Text = "My Server"
+			Large = new IconConfiguration
+			{
+				Asset = "logo",
+				Text = "My Server"
+			},
+			Small = new IconConfiguration
+			{
+				Asset = "nfive",
+				Text = "Server powered by NFive"
+			},
 		};
 
-		public IconConfiguration Small { get; set; } = new IconConfiguration
+		public class ImageConfiguration
 		{
-			Logo = "nfive",
-			Text = "Server powered by NFive"
-		};
+			public IconConfiguration Large { get; set; }
+
+			public IconConfiguration Small { get; set; }
+		}
 
 		public class IconConfiguration
 		{
-			public string Logo { get; set; }
+			public string Asset { get; set; }
 
 			public string Text { get; set; }
 		}

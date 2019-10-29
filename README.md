@@ -3,7 +3,7 @@
 [![Build Status](https://img.shields.io/appveyor/ci/NFive/plugin-discord/master.svg)](https://ci.appveyor.com/project/NFive/plugin-discord)
 [![Release Version](https://img.shields.io/github/release/NFive/plugin-discord/all.svg)](https://github.com/NFive/plugin-discord/releases)
 
-Plugin to set client's Discord rich presence
+Plugin to set client's Discord rich presence when playing on the server
 
 ## Before and After
 ![Before Screenshot](https://user-images.githubusercontent.com/43646/51639690-7828c900-1f59-11e9-9971-481d77c2aa26.png)
@@ -20,15 +20,17 @@ app_id: 520598603568250881
 # Text to show under the server name
 description: My server description
 
-# Large image details
-large:
-  # "Rich Presence Asset" name from your Discord application
-  logo: logo
-  # Text to show on hover
-  text: My Server
+images:
+  # Large image details
+  large:
+    # "Rich Presence Asset" name from your Discord application
+    asset: logo
 
-# Small image details
-small:
-  logo: nfive
-  text: Server powered by NFive
+    # Text to show on hover
+    text: My Server
+
+  # Small image details
+  small:
+    asset: nfive
+    text: Server powered by NFive
 ```

@@ -32,4 +32,10 @@ Global
 		{FB1D83BA-784B-4B5A-8179-D34E1EE6EB4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB1D83BA-784B-4B5A-8179-D34E1EE6EB4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B90828D0-7C3F-4645-BA40-BDAE381DE46A}
+	EndGlobalSection
 EndGlobal

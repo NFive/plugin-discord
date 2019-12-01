@@ -6,11 +6,11 @@ website: https://nfive.io/
 license: LGPL-3.0-or-later
 server:
   main:
-    - NFive.Discord.Server
+  - NFive.Discord.Server
   include:
-    - NFive.Discord.Shared
+  - NFive.Discord.Shared
 client:
   main:
-    - NFive.Discord.Client
+  - NFive.Discord.Client
   include:
-    - NFive.Discord.Shared
+  - NFive.Discord.Shared
